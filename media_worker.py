@@ -137,7 +137,10 @@ def parse_manifest(path, capture_id):
         line = raw.strip()
         if line.startswith('#EXT-X-PROGRAM-DATE-TIME:'):
             try:
-                timestamp = datetime.datetime.fromisoformat(line.split(':', 1)[1].replace('Z', '+00:00')).timestamp()
+                value = line.split(':', 1)[1].replace('Z', '+00:00')
+                # FFmpeg emits +HHMM; Python 3.9 requires the +HH:MM form.
+                value = re.sub(r'([+-]\d{2})(\d{2})$', r'\1:\2', value)
+                timestamp = datetime.datetime.fromisoformat(value).timestamp()
             except (ValueError, OverflowError):
                 timestamp = None
         elif line.startswith('#EXTINF:'):

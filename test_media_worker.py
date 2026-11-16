@@ -241,6 +241,21 @@ class MediaWorkerTests(unittest.TestCase):
         self.worker.current_job = 'different-job'
         self.assertEqual(self.worker._fetch_context()['state'], 'standby')
 
+    def test_ffmpeg_compact_timezone_is_compatible_with_python39(self):
+        cap = 'a' * 32
+        path = Path(self.temp.name) / 'timezone.m3u8'
+        for value in ('1970-01-01T00:16:40.000+0000',
+                      '1970-01-01T00:16:40.000+00:00',
+                      '1970-01-01T05:46:40.000+0530',
+                      '1969-12-31T20:46:40.000-0330',
+                      '1970-01-01T00:16:40.000Z'):
+            with self.subTest(timestamp=value):
+                path.write_text('#EXTM3U\n#EXT-X-PROGRAM-DATE-TIME:' + value +
+                                '\n#EXTINF:2.0,\n' + cap + '-000000000.ts\n')
+                rows = parse_manifest(path, cap)
+                self.assertEqual(len(rows), 1)
+                self.assertEqual((rows[0]['started'], rows[0]['ended']), (1000, 1002))
+
     def test_manifest_only_accepts_local_completed_timestamped_segments(self):
         cap = self.capture_id
         path = self.directory / 'index.m3u8'
