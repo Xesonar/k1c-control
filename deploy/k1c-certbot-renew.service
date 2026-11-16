@@ -1,0 +1,14 @@
+[Unit]
+Description=Renew K1C short-lived public IP TLS certificate
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+UMask=0077
+ExecStart=/opt/k1c-certbot/bin/certbot renew --quiet --cert-name __PUBLIC_IP__ --deploy-hook /usr/local/sbin/k1c-cert-reload
+PrivateTmp=true
+NoNewPrivileges=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/etc/letsencrypt /var/lib/letsencrypt /var/log/letsencrypt /var/www/k1c-acme /var/log/nginx

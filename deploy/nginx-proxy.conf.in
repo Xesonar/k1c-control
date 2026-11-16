@@ -1,0 +1,15 @@
+proxy_pass http://127.0.0.1:3340;
+proxy_http_version 1.1;
+proxy_set_header Connection "";
+proxy_set_header Host __PUBLIC_IP__;
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $remote_addr;
+proxy_set_header X-Forwarded-Proto https;
+proxy_set_header X-Forwarded-Host __PUBLIC_IP__;
+proxy_set_header X-Forwarded-Port 443;
+proxy_set_header Forwarded "";
+proxy_connect_timeout 5s;
+proxy_read_timeout 60s;
+proxy_send_timeout 60s;
+proxy_buffering off;
+proxy_max_temp_file_size 0;

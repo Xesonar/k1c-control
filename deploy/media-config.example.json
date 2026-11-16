@@ -1,0 +1,8 @@
+{
+  "media_capture_enabled": false,
+  "media_state_dir": "/var/lib/k1c-media",
+  "printer_url": "http://printer.local:7126",
+  "media_source_url": "http://printer.local:1984/api/stream.mp4?src=chassis",
+  "ffmpeg_path": "/usr/bin/ffmpeg",
+  "ffprobe_path": "/usr/bin/ffprobe"
+}

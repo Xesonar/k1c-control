@@ -1,0 +1,40 @@
+[Unit]
+Description=Private K1C media worker
+Wants=network-online.target
+After=network-online.target
+ConditionPathExists=/etc/k1c-media/config.json
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/k1c-telegram
+ExecStart=/usr/bin/python3 /opt/k1c-telegram/media_worker.py --config /etc/k1c-media/config.json
+Restart=on-failure
+RestartSec=5
+User=k1c-runtime
+Group=k1c-runtime
+DynamicUser=false
+UMask=0077
+StateDirectory=k1c-media
+StateDirectoryMode=0700
+NoNewPrivileges=true
+CapabilityBoundingSet=
+ProtectSystem=strict
+ReadWritePaths=/var/lib/k1c-media
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+InaccessiblePaths=-/var/lib/k1c-telegram -/etc/k1c-telegram -/run/credentials -/proc
+ProtectControlGroups=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+LockPersonality=true
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+MemoryMax=768M
+CPUQuota=100%
+TasksMax=32
+LimitFSIZE=128M
+
+[Install]
+WantedBy=multi-user.target

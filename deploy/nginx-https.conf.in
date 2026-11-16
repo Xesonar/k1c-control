@@ -1,0 +1,45 @@
+server {
+    listen __PUBLIC_IP__:80 default_server;
+    server_name __PUBLIC_IP__;
+    server_tokens off;
+
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/k1c-acme;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / { return 308 https://__PUBLIC_IP__$request_uri; }
+}
+
+server {
+    listen __PUBLIC_IP__:443 ssl default_server;
+    server_name __PUBLIC_IP__;
+    server_tokens off;
+    ssl_certificate /etc/letsencrypt/live/__PUBLIC_IP__/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/__PUBLIC_IP__/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_session_cache shared:K1CSSL:10m;
+    ssl_session_timeout 1d;
+    ssl_session_tickets off;
+
+    client_max_body_size 130m;
+    client_body_timeout 60s;
+    send_timeout 60s;
+    access_log /var/log/nginx/k1c-access.log k1c_private;
+    error_log /var/log/nginx/k1c-error.log warn;
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy same-origin always;
+    add_header X-Frame-Options DENY always;
+
+    location = /api/login {
+        limit_req zone=k1c_login burst=5 nodelay;
+        limit_req_status 429;
+        include /etc/nginx/snippets/k1c-proxy.conf;
+    }
+    # All static, API, and media paths remain application-controlled.
+    # No nginx alias bypasses login, permissions, or media ownership checks.
+    location / {
+        include /etc/nginx/snippets/k1c-proxy.conf;
+    }
+}
