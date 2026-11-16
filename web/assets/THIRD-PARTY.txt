@@ -1,0 +1,5 @@
+HLS.js 1.7.4, Apache License 2.0
+Source: https://github.com/video-dev/hls.js/releases/tag/v1.7.4
+Vendored file: hls.min.js
+SHA256: cfc70cc9e9fc63d071919e087670abc760c8fd1bc889b88588026e4d22193bbe
+License: HLS-LICENSE.txt
