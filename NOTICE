@@ -1,0 +1,60 @@
+K1C Control — third-party notices
+================================
+
+The combined project is distributed under GNU AGPL-3.0-only. Third-party
+copyright notices and license terms remain applicable to their components.
+This notice does not assign ownership of upstream work to this project.
+
+1. Obico temporal scoring
+------------------------
+scoring.py is a standalone port of mathematical portions of the Obico warning
+judge. Attribution: TheSpaghettiDetective/obico-server contributors.
+
+Pinned upstream revision:
+df8190ef7500459599ebf398c3d1f653754792fd
+
+Sources:
+https://github.com/TheSpaghettiDetective/obico-server/blob/df8190ef7500459599ebf398c3d1f653754792fd/backend/lib/prediction.py
+https://github.com/TheSpaghettiDetective/obico-server/blob/df8190ef7500459599ebf398c3d1f653754792fd/backend/lib/failure_detection.py
+https://github.com/TheSpaghettiDetective/obico-server/blob/df8190ef7500459599ebf398c3d1f653754792fd/backend/config/settings.py
+https://github.com/TheSpaghettiDetective/obico-server/blob/df8190ef7500459599ebf398c3d1f653754792fd/backend/app/models/other_models.py
+
+License: GNU AGPL-3.0-only. Full license: LICENSE and SCORING_LICENSE.txt.
+Integration and modification notes: SCORING_README.txt and scoring.py.
+Upstream license:
+https://github.com/TheSpaghettiDetective/obico-server/blob/df8190ef7500459599ebf398c3d1f653754792fd/LICENSE
+
+The optional detector integration uses pinned upstream Obico source; model
+weights and its built container are not included in this repository. See ai/.
+
+2. HLS.js 1.7.4
+---------------
+Vendored file: web/assets/hls.min.js
+SHA256: cfc70cc9e9fc63d071919e087670abc760c8fd1bc889b88588026e4d22193bbe
+Source: https://github.com/video-dev/hls.js/releases/tag/v1.7.4
+License: Apache License, Version 2.0.
+Upstream notices: web/assets/HLS-LICENSE.txt
+Full Apache license: docs/README/licenses/Apache-2.0.txt
+
+Copyright (c) 2017 Dailymotion (http://www.dailymotion.com)
+
+The upstream license states that src/remux/mp4-generator.js and
+src/demux/exp-golomb.ts derive from videojs-contrib-hls, also under Apache 2.0:
+Copyright (c) 2013-2015 Brightcove.
+
+Upstream license:
+https://github.com/video-dev/hls.js/blob/v1.7.4/LICENSE
+
+3. External tools and profiles
+------------------------------
+OrcaSlicer and FFmpeg are separate external programs. Their executables are not
+distributed here. Optional inference weights are also not distributed here.
+Install these components from their respective upstreams and retain their
+applicable licenses. Profile source URLs and checksums are recorded in
+profiles/sources.json; no ownership of upstream profile content is asserted.
+
+4. Documentation artwork
+-------------------------
+The SVG illustrations in docs/README/illustrations are schematic demonstration
+art created for this repository. They contain no camera frames, user photos or
+private print records. They are distributed with the project under AGPL-3.0-only.
