@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0d1016"><title>K1C — пульт печати</title><meta name="description" content="Личный пульт K1C: печать, файлы, очередь и видео."><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css"></head>
+<body>
+<div id="login-screen" class="login-screen hidden">
+  <div class="login-brand"><span class="brand-mark" data-icon="cube"></span><span>K1C<span class="brand-dot">.</span></span></div>
+  <div class="login-card"><span class="eyebrow">ЛИЧНЫЙ ПУЛЬТ</span><h1>Всё под контролем.</h1><p class="muted">Войдите, чтобы управлять печатью<br>и смотреть записи своего K1C.</p><form id="login-form"><label>Логин<input name="username" autocomplete="username" required maxlength="64" placeholder="Ваш логин"></label><label>Пароль<div class="password-wrap"><input name="password" type="password" autocomplete="current-password" required placeholder="Ваш пароль"><button type="button" id="password-toggle" class="icon-button" aria-label="Показать пароль" data-icon="eye"></button></div></label><p class="form-error" id="login-error" role="alert"></p><button type="submit" class="button primary wide">Войти в пульт <span data-icon="arrow-right"></span></button></form><div class="login-foot"><span data-icon="lock"></span> Доступ выдаёт владелец принтера</div></div>
+  <div class="login-grid" aria-hidden="true"></div><span class="login-caption">K1C CONTROL / PRIVATE ACCESS</span>
+</div>
+<div id="app-shell" class="app-shell hidden">
+  <aside class="sidebar"><a class="brand" href="#dashboard"><span class="brand-mark" data-icon="cube"></span><span>K1C<span class="brand-dot">.</span><small>ЛИЧНЫЙ ПУЛЬТ</small></span></a>
+    <div class="nav-section">ПРИНТЕР</div><nav id="main-nav" aria-label="Основная навигация">
+      <a href="#dashboard" data-page="dashboard" aria-label="Пульт печати" title="Пульт печати"><span data-icon="dashboard"></span><span>Пульт печати</span><span class="nav-live"></span></a>
+      <a href="#files" data-page="files" aria-label="Файлы и задания" title="Файлы и задания"><span data-icon="folder"></span><span>Файлы и задания</span></a>
+      <a href="#queue" data-page="queue" aria-label="Очередь" title="Очередь"><span data-icon="layers"></span><span>Очередь</span><span class="nav-count" id="queue-count">0</span></a>
+      <a href="#history" data-page="history" aria-label="История" title="История"><span data-icon="history"></span><span>История</span></a>
+      <a href="#media" data-page="media" aria-label="Видеоархив" title="Видеоархив"><span data-icon="film"></span><span>Видеоархив</span></a>
+      <a href="#admin" data-page="admin" aria-label="Доступ" title="Доступ" id="admin-nav"><span data-icon="users"></span><span>Доступ</span></a>
+    </nav>
+    <div class="sidebar-bottom"><div class="printer-mini"><span class="status-dot" id="sidebar-dot"></span><div><strong>Creality K1C</strong><small id="sidebar-connection">Проверяем подключение</small></div><span data-icon="wifi"></span></div><button class="user-button" id="user-menu"><span class="avatar" id="user-avatar">K</span><span><strong id="user-name">Пользователь</strong><small id="user-role">Личный доступ</small></span><span data-icon="logout"></span></button></div>
+  </aside>
+  <main class="main"><header class="topbar"><button class="icon-button mobile-menu" id="mobile-menu" aria-label="Меню" data-icon="menu"></button><div class="breadcrumb">Принтер <span>/</span> <strong id="breadcrumb-title">Пульт печати</strong></div><div class="topbar-right"><span class="top-clock" id="clock"></span><button class="icon-button" id="refresh-button" aria-label="Обновить" data-icon="refresh"></button><span class="connection-chip" id="connection-chip"><i class="status-dot"></i>Подключение</span></div></header>
+    <div id="global-warning" class="global-warning hidden" role="status"></div>
+    <section id="page-content" class="page-content" aria-live="polite"></section>
+    <footer class="footer"><span class="footer-wordmark">K1C CONTROL</span><span id="last-updated">Состояние обновляется автоматически</span><span class="footer-secure"><span data-icon="lock"></span> Закрытый доступ</span></footer>
+  </main>
+</div>
+<div id="toast-stack" class="toast-stack" aria-live="polite"></div>
+<div id="modal-root"></div>
+<script src="/assets/hls.min.js" defer></script><script src="/assets/app.js" defer></script>
+</body></html>
