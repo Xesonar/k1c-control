@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="880" viewBox="0 0 1280 880" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">K1C Control — Telegram-бот и веб-пульт</title>
+<desc id="desc">Принтер дома, управление откуда угодно. Схематичные Telegram и веб-пульт с вымышленными данными. Изображений реальной камеры нет.</desc>
+<defs><linearGradient id="hero-bg" x1="0" y1="0" x2="1280" y2="880" gradientUnits="userSpaceOnUse"><stop stop-color="#151b2e"/><stop offset="1" stop-color="#080e1b"/></linearGradient><pattern id="hero-grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" stroke="#77859e" stroke-opacity=".065"/></pattern><clipPath id="hero-round"><rect width="1280" height="880" rx="24"/></clipPath></defs>
+<g clip-path="url(#hero-round)" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif"><rect width="1280" height="880" fill="url(#hero-bg)"/><rect width="1280" height="880" fill="url(#hero-grid)"/>
+<path d="m56 50 12-7 12 7v14l-12 7-12-7V50Z" stroke="#b39af7" stroke-width="2"/><path d="m56 50 12 7 12-7M68 57v14" stroke="#b39af7" stroke-width="2"/>
+<text x="95" y="64" fill="#e3e8f3" font-size="19" font-weight="700">K1C Control</text><text x="1228" y="62" text-anchor="end" fill="#a08ad8" font-size="11" letter-spacing="1.3">TELEGRAM + WEB · SELF-HOSTED</text>
+<text x="53" y="133" fill="#f1f4fb" font-size="49" font-weight="750" letter-spacing="-1.5">Принтер дома.</text><text x="53" y="192" fill="#c4b5fd" font-size="49" font-weight="750" letter-spacing="-1.5">Управление — откуда угодно.</text>
+<text x="68" y="236" fill="#c5d5e8" font-size="14" font-weight="650">Telegram — всегда под рукой</text><text x="420" y="236" fill="#c5d5e8" font-size="14" font-weight="650">Веб-пульт — всё на большом экране</text>
+<svg x="68" y="260" width="310" height="484" viewBox="760 36 390 608">
+<defs><linearGradient id="bar" x1="801" y1="440" x2="1029" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#5eead4"/></linearGradient></defs>
+    <!-- Fictional Telegram UI -->
+    <rect x="760" y="36" width="390" height="608" rx="36" fill="#0c1320" stroke="#3d4b62" stroke-width="2"/>
+    <rect x="769" y="45" width="372" height="590" rx="28" fill="#121e2e"/>
+    <rect x="888" y="48" width="135" height="15" rx="7.5" fill="#080e18"/>
+    <text x="789" y="68" fill="#9bacbf" font-size="9">9:41</text><path d="M1104 61h17v7h-17z" stroke="#98aabe"/><path d="M1122 63v3" stroke="#98aabe"/>
+    <path d="M769 119h372" stroke="#2b3a4e"/>
+    <path d="m789 92-5 5 5 5" stroke="#8dbadc" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="822" cy="95" r="16" fill="#30415e"/><path d="m813 95 18-6-5 16-5-6-8-4Z" fill="#96cdf4"/>
+    <text x="849" y="94" fill="#e6edf8" font-size="14" font-weight="650">K1C Control</text><text x="849" y="110" fill="#7d93ac" font-size="10">демонстрация · бот</text>
+    <rect x="1066" y="84" width="55" height="22" rx="6" fill="#302842"/><text x="1093" y="99" fill="#cdbbfa" text-anchor="middle" font-size="10" font-weight="700">DEMO</text>
+    <rect x="789" y="138" width="333" height="363" rx="13" fill="#1b2c40"/>
+    <text x="805" y="163" fill="#f0f4fb" font-size="14" font-weight="700">Печать продолжается</text><text x="805" y="184" fill="#a3b9ce" font-size="11">demo-print.gcode</text>
+    <rect x="801" y="197" width="309" height="190" rx="9" fill="#101e2d"/>
+    <path d="M824 364V221h257v143M833 364V230h239v134M824 244h257M951 230v62" stroke="#445b74" stroke-width="4"/>
+    <path d="m835 362 39-28h157l41 28H835Z" fill="#203e50" stroke="#4b6e82"/>
+    <path d="m877 340 142 0m-156 10h170m-132-14-16 26m42-26-6 26m31-26 3 26m28-26 11 26m15-26 19 26" stroke="#4f7487" stroke-opacity=".4"/>
+    <rect x="936" y="287" width="31" height="28" rx="4" fill="#2b3d53" stroke="#889bb1"/><path d="m944 315 7 10 8-10" fill="#ab94f2"/>
+    <path d="m924 339 29-15 29 15-29 15-29-15Z" fill="#8f7acc"/><path d="M924 339v-22l29 15v22l-29-15Z" fill="#9c86e3"/><path d="m953 332 29-15v22l-29 15v-22Z" fill="#695ca9"/><path d="m924 317 29-15 29 15-29 15-29-15Z" fill="#bea8ff"/>
+    <rect x="811" y="206" width="157" height="19" rx="5" fill="#28253e"/><text x="889" y="219" text-anchor="middle" fill="#bea8f7" font-size="9" font-weight="600">СХЕМА · НЕ КАДР КАМЕРЫ</text>
+    <text x="805" y="411" fill="#dfebf7" font-size="12" font-weight="600">67% готово</text><text x="1108" y="411" fill="#92abc3" font-size="11" text-anchor="end">Осталось ≈ 42 мин</text>
+    <rect x="805" y="423" width="301" height="5" rx="2.5" fill="#35475d"/><rect x="805" y="423" width="202" height="5" rx="2.5" fill="url(#bar)"/>
+    <text x="805" y="452" fill="#9db4ca" font-size="11">Сопло</text><text x="861" y="452" fill="#e7eef8" font-size="12" font-weight="600">245°</text><text x="953" y="452" fill="#9db4ca" font-size="11">Стол</text><text x="995" y="452" fill="#e7eef8" font-size="12" font-weight="600">70°</text>
+    <text x="805" y="481" fill="#6e8ba6" font-size="10">Статус проверен · все данные вымышлены</text>
+    <rect x="790" y="508" width="161" height="35" rx="7" fill="#2b425a"/><text x="870" y="530" fill="#cae0f1" text-anchor="middle" font-size="11" font-weight="600">Пауза</text>
+    <rect x="959" y="508" width="162" height="35" rx="7" fill="#2b425a"/><text x="1040" y="530" fill="#cae0f1" text-anchor="middle" font-size="11" font-weight="600">Управление</text>
+    <rect x="790" y="550" width="161" height="35" rx="7" fill="#2b425a"/><text x="870" y="572" fill="#cae0f1" text-anchor="middle" font-size="11" font-weight="600">Файлы и очередь</text>
+    <rect x="959" y="550" width="162" height="35" rx="7" fill="#3d3b66"/><text x="1040" y="572" fill="#dfd9fc" text-anchor="middle" font-size="11" font-weight="600">Клип · 30 сек</text>
+    <rect x="898" y="618" width="113" height="4" rx="2" fill="#64778e"/>
+
+</svg>
+<svg x="420" y="260" width="812" height="556" viewBox="408 88 824 564">
+<defs>
+    <linearGradient id="background" x1="35" y1="20" x2="1200" y2="720" gradientUnits="userSpaceOnUse"><stop stop-color="#151a2c"/><stop offset="1" stop-color="#080d18"/></linearGradient>
+    <linearGradient id="accent" x1="621" y1="255" x2="849" y2="440" gradientUnits="userSpaceOnUse"><stop stop-color="#a78bfa"/><stop offset="1" stop-color="#4fd1c5"/></linearGradient>
+    <linearGradient id="glass" x1="640" y1="220" x2="980" y2="590" gradientUnits="userSpaceOnUse"><stop stop-color="#1d2938"/><stop offset="1" stop-color="#101926"/></linearGradient>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" stroke="#596a80" stroke-opacity=".10"/></pattern>
+    <filter id="shadow" x="360" y="50" width="920" height="650" filterUnits="userSpaceOnUse"><feDropShadow dy="12" stdDeviation="18" flood-color="#000" flood-opacity=".4"/></filter>
+    <clipPath id="round"><rect width="1280" height="720" rx="24"/></clipPath>
+    <clipPath id="camera"><rect x="582" y="209" width="350" height="246" rx="12"/></clipPath>
+  </defs>
+      <!-- Fictional web dashboard. -->
+      <g filter="url(#shadow)">
+        <rect x="408" y="88" width="824" height="564" rx="16" fill="#0f1724" stroke="#35435b"/>
+      </g>
+      <path d="M424 88h792a16 16 0 0 1 16 16v28H408v-28a16 16 0 0 1 16-16Z" fill="#1a2434"/>
+      <circle cx="430" cy="110" r="4" fill="#59657b"/><circle cx="445" cy="110" r="4" fill="#59657b"/><circle cx="460" cy="110" r="4" fill="#59657b"/>
+      <rect x="627" y="99" width="389" height="22" rx="6" fill="#111b29"/>
+      <path d="M642 108v-2a3 3 0 1 1 6 0v2m-7 0h8v7h-8v-7Z" stroke="#7e91aa" stroke-width="1.2"/>
+      <text x="663" y="114" fill="#8b9cb2" font-size="10">dashboard.example.com</text>
+      <text x="1152" y="114" fill="#9aaac0" font-size="10" letter-spacing="1">DEMO</text>
+      <path d="M560 132v520" stroke="#253247"/>
+      <text x="430" y="169" fill="#e2e8f0" font-size="13" font-weight="700">K1C / CONTROL</text>
+      <text x="430" y="188" fill="#667b96" font-size="9" letter-spacing="1.2">PRIVATE WORKSPACE</text>
+      <rect x="420" y="217" width="128" height="34" rx="8" fill="#2e294a"/>
+      <rect x="432" y="230" width="8" height="8" rx="2" fill="#b6a0fa"/><text x="451" y="239" fill="#d5c7ff" font-size="12" font-weight="600">Пульт печати</text>
+      <text x="432" y="280" fill="#8496ae" font-size="12">Файлы и задания</text>
+      <text x="432" y="321" fill="#8496ae" font-size="12">Очередь</text><rect x="519" y="307" width="19" height="19" rx="5" fill="#233348"/><text x="528" y="320" text-anchor="middle" fill="#bdd2e6" font-size="10">2</text>
+      <text x="432" y="362" fill="#8496ae" font-size="12">История</text>
+      <text x="432" y="403" fill="#8496ae" font-size="12">Видеоархив</text>
+      <path d="M425 582h120" stroke="#253247"/>
+      <circle cx="435" cy="608" r="4" fill="#4fd1c5"/><text x="448" y="612" fill="#8fa7be" font-size="10">На связи</text>
+      <text x="582" y="176" fill="#edf2fa" font-size="21" font-weight="700">Пульт печати</text>
+      <text x="582" y="195" fill="#7288a3" font-size="10">Одно состояние в Telegram и браузере</text>
+      <rect x="1096" y="158" width="112" height="24" rx="12" fill="#143b37"/><circle cx="1109" cy="170" r="3" fill="#5eead4"/><text x="1120" y="174" fill="#87dfd2" font-size="9">Принтер на связи</text>
+
+      <g clip-path="url(#camera)">
+        <rect x="582" y="209" width="350" height="246" rx="12" fill="#151f2d"/>
+        <rect x="582" y="209" width="350" height="246" fill="url(#grid)"/>
+        <path d="M635 418V249h247v169M645 418V259h227v159M635 271h247M758 259v63" stroke="#4d6079" stroke-width="5"/>
+        <path d="m647 418 39-32h148l39 32H647Z" fill="#24394c" stroke="#526d83" stroke-width="1.5"/>
+        <path d="m682 394 150 0m-164 13h178m-143-20-22 31m47-31-12 31m39-31v31m28-31 12 31m14-31 22 31" stroke="#557485" stroke-opacity=".4"/>
+        <rect x="742" y="315" width="33" height="32" rx="5" fill="#1e2e42" stroke="#8293a8"/><path d="m751 347 7 12 8-12" fill="#a78bfa"/>
+        <path d="m723 399 35-19 36 19-36 18-35-18Z" fill="#8270c3"/><path d="M723 399v-29l35 18v29l-35-18Z" fill="#9380da"/><path d="M758 388v29l36-18v-29l-36 18Z" fill="#665eac"/><path d="m723 370 35-19 36 19-36 18-35-18Z" fill="#bea8ff"/>
+        <rect x="598" y="223" width="140" height="22" rx="6" fill="#26233d"/><text x="668" y="238" text-anchor="middle" fill="#c9b7ff" font-size="10" font-weight="700" letter-spacing=".6">DEMO · ИЛЛЮСТРАЦИЯ</text>
+        <text x="757" y="443" fill="#6e849e" font-size="10" text-anchor="middle">Схема принтера · без реального кадра</text>
+      </g>
+      <rect x="582.5" y="209.5" width="349" height="245" rx="11.5" stroke="#2b3b51"/>
+      <rect x="948.5" y="209.5" width="259" height="245" rx="11.5" fill="url(#glass)" stroke="#2b3b51"/>
+      <text x="967" y="239" fill="#a8b8cd" font-size="11">ТЕКУЩАЯ ПЕЧАТЬ</text>
+      <text x="967" y="268" fill="#e2e9f4" font-size="15" font-weight="650">demo-part.gcode</text>
+      <circle cx="1015" cy="330" r="39" stroke="#2d3b50" stroke-width="6"/><circle cx="1015" cy="330" r="39" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-dasharray="164 245" transform="rotate(-90 1015 330)"/>
+      <text x="1015" y="336" text-anchor="middle" fill="#ecedfc" font-size="23" font-weight="700">67<tspan font-size="12">%</tspan></text>
+      <text x="1072" y="318" fill="#8399b0" font-size="10">Осталось</text><text x="1072" y="341" fill="#dce8f6" font-size="17" font-weight="600">42 мин</text>
+      <rect x="966" y="392" width="103" height="35" rx="7" fill="#344159"/><text x="1017" y="414" text-anchor="middle" fill="#dce6f5" font-size="11">Пауза</text>
+      <rect x="1078.5" y="392.5" width="111" height="34" rx="6.5" stroke="#714052"/><text x="1134" y="414" text-anchor="middle" fill="#e5a6b2" font-size="11">Отменить…</text>
+
+      <rect x="582.5" y="473.5" width="168" height="81" rx="11.5" fill="#172331" stroke="#2b3b51"/><text x="598" y="496" fill="#849bb5" font-size="10">СОПЛО</text><text x="598" y="530" fill="#e0e9f5" font-size="27" font-weight="650">245°<tspan fill="#647d97" font-size="13" font-weight="400"> / 245°</tspan></text>
+      <rect x="763.5" y="473.5" width="168" height="81" rx="11.5" fill="#172331" stroke="#2b3b51"/><text x="779" y="496" fill="#849bb5" font-size="10">СТОЛ</text><text x="779" y="530" fill="#e0e9f5" font-size="27" font-weight="650">70°<tspan fill="#647d97" font-size="13" font-weight="400"> / 70°</tspan></text>
+      <rect x="948.5" y="473.5" width="259" height="81" rx="11.5" fill="#142e2e" stroke="#254844"/><path d="m967 501 8-4 8 4v9c0 6-8 10-8 10s-8-4-8-10v-9Z" stroke="#65d1c1" stroke-width="1.5"/><path d="m971 508 3 3 5-6" stroke="#65d1c1" stroke-width="1.5"/><text x="997" y="503" fill="#a6ddd4" font-size="12" font-weight="600">Подготовка проверена</text><text x="997" y="524" fill="#6e9f99" font-size="10">Свежая карта · температуры</text>
+      <rect x="582.5" y="573.5" width="625" height="60" rx="11.5" fill="#151f2e" stroke="#2b3b51"/><text x="600" y="598" fill="#b8c8da" font-size="12" font-weight="600">Очередь · 2 задания</text><text x="600" y="617" fill="#748aa3" font-size="10">Следующий запуск — после подтверждения пустого стола</text><path d="m1181 595 6 6-6 6" stroke="#8295af" stroke-width="1.5"/>
+
+</svg>
+<text x="68" y="773" fill="#859bb6" font-size="12">Быстрые команды. Снимки. Уведомления.</text><text x="68" y="796" fill="#859bb6" font-size="12">Общий доступ, файлы и очередь.</text>
+<path d="M56 833h1176" stroke="#2a374c"/><text x="57" y="858" fill="#7189a5" font-size="11">Интернет + ваш сервер + доступ к принтеру · AGPL-3.0-only</text><text x="1231" y="858" text-anchor="end" fill="#7189a5" font-size="11">DEMO · все данные вымышлены</text></g></svg>
