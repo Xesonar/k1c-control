@@ -1,0 +1,59 @@
+{
+  "revision": "40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19",
+  "sources": {
+    "machine:fdm_machine_common": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/machine/fdm_machine_common.json",
+      "sha256": "cd8bc41e5742c4255d20286dd22bc70567d5f366975c17cd909e308c9fa224cd",
+      "parent": ""
+    },
+    "machine:fdm_creality_common": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/machine/fdm_creality_common.json",
+      "sha256": "932c7beb257f7c5227bb5334432cca0c835601d8871b35c3e2b86bbe2f29d042",
+      "parent": "fdm_machine_common"
+    },
+    "machine:Creality K1C 0.4 nozzle": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/machine/Creality%20K1C%200.4%20nozzle.json",
+      "sha256": "bb54eb2a6fa179762da1e9b0e6012096ae3db5e3d357f0ea5d0aa6f94a2f67f5",
+      "parent": "fdm_creality_common"
+    },
+    "process:fdm_process_common": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/process/fdm_process_common.json",
+      "sha256": "1b5498eb7fdb944e478885e4971ea7f7b30b7db101b9438f0002d00bd6c748f8",
+      "parent": ""
+    },
+    "process:fdm_process_creality_common": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/process/fdm_process_creality_common.json",
+      "sha256": "40a5e4a485f0e1d6fecd6af17b7b4d478d6c85680da22068edb4ce0a50ae88d3",
+      "parent": "fdm_process_common"
+    },
+    "process:0.20mm Standard @Creality K1C": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/process/0.20mm%20Standard%20%40Creality%20K1C%200.4%20nozzle.json",
+      "sha256": "b30fcb3c2741483ff7b722632dda59b9252bd037831d975efa931c19fe287b0a",
+      "parent": "fdm_process_creality_common"
+    },
+    "filament:fdm_filament_petg": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/filament/fdm_filament_petg.json",
+      "sha256": "6fdc75e69b29feaa730a801b502569f6e237d49cbdc9482aa3955d0961261c1d",
+      "parent": ""
+    },
+    "filament:Generic PETG @K1C-all": {
+      "url": "https://raw.githubusercontent.com/OrcaSlicer/OrcaSlicer/40ecc66f78ed72dc368e0c1ebe40d77f00cc8a19/resources/profiles/Creality/filament/Generic%20PETG%20%40K1C-all.json",
+      "sha256": "4a5b775aef4095eeb9e871dffa6666547d3f82dc10050187d6ea9fc960094fc5",
+      "parent": "fdm_filament_petg"
+    }
+  },
+  "telegram_overrides": {
+    "machine": "Native START_PRINT; neutral z_offset=0. Calibrate the target printer separately.",
+    "process": "tree(auto) supports, 15% infill, 3 walls, post_process empty",
+    "command_line": "--curr-bed-type Textured PEI Plate",
+    "extruder_bed_celsius": [
+      240,
+      70
+    ]
+  },
+  "profile_sha256": {
+    "filament.json": "37f587f45b8aebde5e054190263904c3344494fae7352ac65294ef422a7d4fad",
+    "process.json": "9d0ef691cd776a022da2b26a8bccb556fffcf57fd0041dd1257b1a5a637822ee",
+    "machine.json": "f5cf1681a99764f7631bb02a273f140e79aff041704bdd4021d72a7a2098e37e"
+  }
+}
