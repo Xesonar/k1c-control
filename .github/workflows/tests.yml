@@ -3,16 +3,27 @@ name: Tests
 on:
   push:
     branches: [main]
+    paths:
+      - '**.py'
+      - 'config.example.json'
+      - 'profiles/**'
+      - 'deploy/**'
+      - 'web/**'
+      - '.github/workflows/**'
   pull_request:
   workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   tests:
     name: Python ${{ matrix.python }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     strategy:
       fail-fast: false
